@@ -1,0 +1,64 @@
+body {
+    width: 60%;
+    margin: 0 auto;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+    margin-right: 20px;
+}
+
+li {
+    margin: 2px 20px;
+}
+
+section {
+    margin-top: 20px;
+    margin-bottom: 70px;
+}
+
+.about-me {
+    display: grid;
+    grid-template: 1fr / 3fr 2fr;
+    grid-template-areas:
+        "a  b";
+    grid-gap: 30px;
+    width: 100%;
+    height: 400px;
+}
+
+.about-text {
+    grid-area: a;
+}
+
+ .about-me img {
+    width: 400px;
+    grid-area: b;
+    border-radius: 10%;
+    margin-top: 20px;
+}
+
+.projects {
+    text-align: center;
+}
+
+.project {
+    width: 290px;
+    display: inline-block;
+    margin: 0 10px 0 10px;
+}
+
+.project img {
+    width: 100%;
+}
+
+/* .cafe {
+    overflow: hidden;
+} */
