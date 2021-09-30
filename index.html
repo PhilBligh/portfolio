@@ -2,43 +2,57 @@
 <head>
     <title>Phil Bligh's Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="portfolio.js" async></script>
+    
 </head>
 <body>
     <header>
         <h1>Phil Bligh</h1>
         <ul>
-            <li>About Me</li>
-            <li>Projects</li>
-            <li>Skills</li>
+            <a href="#about"><li>About Me</li></a>
+            <a href="#projects"><li>Projects</li></a>
+            <a href="#skills"><li>Skills</li></a>
             <li>Contact</li>
         </ul>
     </header>
     <section class="about-me">
         <div class="about-text">
-            <h2>About Me</h2>
-            <p>I'm a web developer, around a year into my training. I've mostly taught myself in my spare time but I'm taking my learnign to the next level by joining Makers in January.</p> 
+            <h2 id="about">About Me</h2>
+            <p>I'm a web developer, around a year into my training. I've mostly taught myself in my spare time but I'm taking my learning to the next level by joining Makers in January.</p> 
             <p>I'm really enjoying learning - the logical, methodical nature of coding suits my mind well, and once I've made it through the Makers course I hope to embark on an exciting career in web development.</p> 
-            <p>I'm a father of two, husband of one, writer of three unpublished novels, and learner of languages, getting to a point where I"m fluent in Spanish and still utterly useless at Japanese.</p>
+            <p>I'm a father of two, husband of one, writer of three unpublished novels, and learner of languages, getting to a point where I'm fluent in Spanish and still utterly useless at Japanese.</p>
             <p>I'm still just a beginner when it comes to web development but I've collected here some of the things I've created so far on my learning journey.</p>
         </div>
         <img src="phil_photo.jpg">
     </section>
+    <h2 class="subhead" id="projects">Projects</h2>
     <section class="projects">
-    <h2>Projects</h2>
-        <div class="project bootcamp">
-            <h3>⇣Application Site⇣</h3>
-            <img src="application.png">
+        <div class="project" id="bootcamp">
+            <h3 id="bootbut">⇣Application Site⇣</h3>
+            <a href="https://philbligh.github.io/phil_founder_coder/" target="_blank"><img src="application.png"></a>
             <figcaption>A website created as application to a coding camp. Uses Javascript interactivity</figcaption>
         </div>
-        <div class="project flexbox">
-            <h3>⇣Flexbox Responsive Site⇣</h3>
-            <img src="flexbox.png">
-            <figcaption>A website I designed to practice Floxbox layouts and responsive design</figcaption> 
+        <div class="project" id="flexbox">
+            <h3 id="flexbut">⇣Flexbox Responsive Site⇣</h3>
+            <a href="https://philbligh.github.io/flexbox_website/" target="_blank"><img src="flexbox.png"></a>
+            <figcaption>A website I designed to practice Flexbox layouts and responsive design</figcaption> 
         </div>
-        <div class="project cafe">
-            <h3>⇣Cafe Site Exercise⇣</h3>
-            <img src="Cafe.png">
+        <div class="project" id="cafe">
+            <h3 id="cafebut">⇣Cafe Site Exercise⇣</h3>
+            <a href="https://philbligh.github.io/tea_cozy/" target="_blank"><img src="Cafe.png"></a>
             <figcaption>A website created during a Codecademy exercise to practise layouts with CSS</figcaption>
         </div>
     </section>
+    <section id="skills">
+       <h2>Skills</h2>
+       <img src="html.png">
+       <img src="css.png">
+       <img src="js.png">
+       <img src="python.png">
+       <img src="git.png">
+       <img src="github.png">
+       <img src="scrum.png">
+    </section>
+    
 </body>
